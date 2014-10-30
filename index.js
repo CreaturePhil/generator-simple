@@ -17,6 +17,8 @@ app.set('view engine', 'jade');
 
 app.use(morgan('dev'));
 
+app.use(express.static(path.join(__dirname, 'public')));
+
 // routes setup
 router(app);
 
